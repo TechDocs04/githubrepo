@@ -1,0 +1,101 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient Background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Heading Styles */
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(to left, #ff0080, #ff8c00);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin: 0;
+    animation: rainbow-text 4s linear infinite; /* Text Animation */
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Colorful Button */
+  button {
+    background-color: #6a11cb;
+    background-image: linear-gradient(to right, #2575fc, #6a11cb);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Gradient Cards */
+  .card {
+    width: 300px;
+    background: linear-gradient(135deg, #6e7cde, #b1b6e3);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Hover Effects */
+  .card:hover, button:hover {
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
+  
+  /* Gradient Text */
+  h3 {
+    font-size: 2rem;
+    background: linear-gradient(to right, #f7ff00, #db36a4);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Animations */
+  @keyframes rainbow-text {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+  
+  /* Additional Styling */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .container .card {
+    margin: 10px;
+  }
